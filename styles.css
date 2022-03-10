@@ -1,5 +1,5 @@
-head {
-    position:fixed;
+head > div{
+    position:sticky;
 }
 
 body {
