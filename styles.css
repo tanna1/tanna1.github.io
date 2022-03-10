@@ -25,3 +25,18 @@ p {
     min-width: 20%;
     padding: 10px;
 }
+
+.outer > button {
+    margin: 2px;
+    background-color: lightgray;
+    text-align: center;
+    min-width: 20%;
+    padding: 10px;
+    border: 0px;
+}
+
+.scrollview {
+    overflow: auto;
+    padding-left: 15%;
+    padding-right: 15%;
+}
