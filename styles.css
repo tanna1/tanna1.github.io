@@ -35,6 +35,10 @@ p {
     border: 0px;
 }
 
+.outer > button:hover {
+    background-color: rgb(225,225,225);
+}
+
 .scrollview {
     overflow: auto;
     padding-left: 15%;
