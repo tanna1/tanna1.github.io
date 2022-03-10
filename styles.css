@@ -1,5 +1,6 @@
 head > div{
     position:sticky;
+    top:0;
 }
 
 body {
@@ -37,7 +38,6 @@ p {
     min-width: 20%;
     padding: 10px;
     border: 0px;
-    border-radius: 10px;
 }
 
 .outer > button:hover {
