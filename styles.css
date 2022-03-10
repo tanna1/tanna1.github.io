@@ -1,3 +1,7 @@
+head {
+    position:fixed;
+}
+
 body {
     background-color: beige;
     color: black;
@@ -33,6 +37,7 @@ p {
     min-width: 20%;
     padding: 10px;
     border: 0px;
+    border-radius: 10px;
 }
 
 .outer > button:hover {
