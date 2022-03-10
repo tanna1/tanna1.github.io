@@ -6,46 +6,46 @@ header{
 body {
     background-color: beige;
     color: black;
+    overflow: auto;
+    text-align: left;
 }
 
 h1 {
-    text-align: center;
+    text-align: left;
+    scroll-margin-top: 1em;
+    margin-bottom: 0;
 }
 
 p {
-    text-align: center;
+    text-align: left;
+    margin-top: .5em;
+}
+
+img {
+    max-width: 100%;
 }
 
 .outer {
     display: flex;
     justify-content: center;
-    padding: 5%;
     background-color: white;
-}
-
-.outer > div {
-    margin: 2px;
-    background-color: lightgray;
-    text-align: center;
-    min-width: 20%;
-    padding: 10px;
+    height: 2em;
 }
 
 .outer > button {
-    margin: 2px;
-    background-color: lightgray;
+    color: black;
+    border:0;
+    background-color: transparent;
     text-align: center;
     min-width: 20%;
-    padding: 10px;
-    border: 0px;
+    object-fit: fill;
 }
 
 .outer > button:hover {
-    background-color: rgb(225,225,225);
+    background-color:rgb(225, 225, 225);
 }
 
 .scrollview {
-    overflow: auto;
     padding-left: 15%;
     padding-right: 15%;
 }
