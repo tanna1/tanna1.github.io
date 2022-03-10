@@ -14,8 +14,10 @@ p {
     display: flex;
     justify-content: center;
     padding: 5%;
+    background-color: white;
 }
 
 .outer > div {
     margin: 2px;
+    background-color: lightgray;
 }
