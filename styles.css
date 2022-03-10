@@ -10,8 +10,12 @@ p {
     text-align: center;
 }
 
-.outer{
+.outer {
     display: flex;
     justify-content: center;
     padding: 5%;
+}
+
+.outer > div {
+    margin: 2px;
 }
