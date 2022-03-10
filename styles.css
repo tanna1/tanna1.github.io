@@ -1,5 +1,6 @@
 body {
     background-color: beige;
+    color: black;
 }
 
 h1 {
@@ -20,4 +21,7 @@ p {
 .outer > div {
     margin: 2px;
     background-color: lightgray;
+    text-align: center;
+    min-width: 20%;
+    padding: 10px;
 }
