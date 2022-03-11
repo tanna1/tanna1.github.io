@@ -1,3 +1,7 @@
+html {
+    font-family: sans-serif;
+}
+
 header{
     position:sticky;
     top:0;
@@ -11,8 +15,17 @@ body {
 }
 
 h1 {
-    text-align: left;
-    scroll-margin-top: 1em;
+    scroll-margin-top: 2em;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+h2 {
+    scroll-margin-top: 2em;
+    margin-bottom: 0;
+    font-weight: normal;
+}
+h3 {
+    scroll-margin-top: 2em;
     margin-bottom: 0;
 }
 
@@ -29,7 +42,7 @@ img {
     display: flex;
     justify-content: center;
     background-color: white;
-    height: 2em;
+    height: 2.5em;
 }
 
 .outer > button {
@@ -42,10 +55,39 @@ img {
 }
 
 .outer > button:hover {
-    background-color:rgb(225, 225, 225);
+    background-color:rgb(240, 240, 240);
+}
+
+.outer > button:active {
+    background-color: rgb(211, 211, 211);
 }
 
 .scrollview {
-    padding-left: 15%;
-    padding-right: 15%;
+    margin-left: 10em;
+    margin-right: 10em;
+    min-width: 75%;
+}
+
+.definition {
+    text-align: center;
+    text-indent: 1em;
+    color:rgb(63, 63, 63);
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding:1em;
+
+    background-color: rgba(199, 199, 199, 0.205);
+}
+
+.img_title {
+    text-align: center;
+    color: rgb(102, 102, 102);
+    font-weight: lighter;
+    margin-bottom:2em;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color:rgb(80, 158, 206);
 }
