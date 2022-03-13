@@ -12,6 +12,7 @@ body {
     color: black;
     overflow: auto;
     text-align: left;
+    margin: 0;
 }
 
 h1 {
@@ -43,6 +44,7 @@ img {
     justify-content: center;
     background-color: white;
     height: 2.5em;
+    margin:0;
 }
 
 .outer > button {
@@ -83,6 +85,7 @@ img {
     text-align: center;
     color: rgb(102, 102, 102);
     font-weight: lighter;
+    font-size: small;
     margin-bottom:2em;
 }
 
@@ -90,4 +93,18 @@ a {
     text-decoration: none;
     font-weight: bold;
     color:rgb(80, 158, 206);
+}
+
+.custom-ul {
+    list-style: none;
+    list-style-position: outside;
+}
+
+.custom-ul li:before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: red; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1.5em; /* Also needed for space (tweak if needed) */
 }
