@@ -33,6 +33,7 @@ h3 {
 p {
     text-align: left;
     margin-top: .5em;
+    line-height: 2em;
 }
 
 img {
@@ -53,7 +54,8 @@ img {
     background: transparent;
     text-align: center;
     font-weight: normal;
-    min-width: 20%;
+    font-size: small;
+    width: 100%;
     padding-top:1em;
     padding-bottom: 1em;
 }
@@ -95,4 +97,12 @@ a {
     text-decoration: none;
     font-weight: bold;
     color:rgb(80, 158, 206);
+}
+
+.title {
+    margin-top: 2.5em;
+    margin-bottom: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    font-size: 3em;
 }
