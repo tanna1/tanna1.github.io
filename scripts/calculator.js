@@ -17,15 +17,15 @@ window.onload = function(){
 }
 
 function addNumber(number) {
-    if (n.toString().length <= 15){
-
-        if (n == 0){
-            n = "";
-        }
-        n+=number.toString();
-        console.log(number);
-        updateOutput()
+    if (n.toString().length >= 15 || number == "." && n.toString().includes(".")){
+        return;
     }
+
+    if (n == 0){
+        n = "";
+    }
+    n+=number.toString();
+    updateOutput()
 }
 
 function setNumber(number){
@@ -41,7 +41,6 @@ function minus(){
 }
 
 function result(){
-    console.log("RESULT");
     switch (mode){
         case "plus":
             n = parseFloat(m) + parseFloat(n);
@@ -66,13 +65,13 @@ function result(){
         default:
             return;
     }
+    n = parseFloat(n.toFixed(3));
     mode = "none";
     m = 0;
     updateOutput();
 }
 
 function clearAll(){
-    console.log("CLEAR");
     n = 0;
     m = 0;
     mode = "none";
@@ -82,31 +81,33 @@ function clearAll(){
 function setMode(modeP){
     switch (mode){
         case "plus":
-            m = parseFloat(m) + parseFloat(n);
+            m = parseFloat((parseFloat(m) + parseFloat(n)).toFixed(3));
             break;
         case "minus":
-            m = parseFloat(m) - parseFloat(n);
+            m = parseFloat((parseFloat(m) - parseFloat(n)).toFixed(3));
             break;
         case "multiply":
-            m = parseFloat(m) * parseFloat(n);
+            m = parseFloat((parseFloat(m) * parseFloat(n)).toFixed(3));
             break;
         case "divide":
-            m = parseFloat(m) / parseFloat(n);
+            m = parseFloat((parseFloat(m) / parseFloat(n)).toFixed(3));
             break;
         case "modulus":
-            m = parseFloat(m) % parseFloat(n);
+            m = parseFloat((parseFloat(m) % parseFloat(n)).toFixed(3));
             break;
         default:
             m = n;
     }
+    if (m.toString().length > 15){
+        m = 0;
+    }
     n = 0;
-    console.log(modeP);
     mode = modeP;
     updateOutput();
 }
 
 function updateOutput(){
-    lastOp.textContent = m != 0 ? parseFloat(parseFloat(m).toFixed(3)) : '\xa0';
+    lastOp.textContent = m != 0 ? m : '\xa0';
     switch (mode){
         case "none":
             operation.textContent = '\xa0';
@@ -127,7 +128,12 @@ function updateOutput(){
             operation.textContent = "%";
             break;
     }
-    output.textContent = parseFloat(parseFloat(n).toFixed(3));
+    if (n.toString().length > 15){
+        n = 0;
+        output.textContent = "Too long";
+    }
+    else
+        output.textContent = n;
 
     resultBtn.disabled = mode == "none";
 }
