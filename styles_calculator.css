@@ -1,0 +1,49 @@
+.calculator {
+}
+
+.calculator > table {
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    border-spacing: 0.1em;
+}
+
+.calculator > table > tbody > tr {
+    height: fit-content;
+}
+
+.calculator > table > tbody > tr > td > button {
+    width: 5em;
+    height: 5em;
+    border:none;
+    background-color: white;
+}
+
+.calculator > table > tbody > tr > td > button:enabled:hover {
+    background-color:rgb(240, 240, 240);
+}
+
+.calculator > table > tbody > tr > td > button:disabled {
+    background-color:rgb(230, 230, 230);
+}
+
+.calculator > table > tbody > tr > td > button:enabled:active {
+    background-color: rgb(211, 211, 211);
+}
+
+.calculator > div {
+    width: 16.3em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5em;
+    margin-bottom: .1em;
+    background-color: white;
+    padding-top:.5em;
+    padding-bottom: .5em;
+    padding: .5em;
+}
+
+.calculator > div > p {
+    text-align: right;
+    margin-bottom:0;
+}

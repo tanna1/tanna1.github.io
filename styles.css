@@ -43,25 +43,27 @@ img {
     display: flex;
     justify-content: center;
     background-color: white;
-    height: 2.5em;
+    height: auto;
     margin:0;
 }
 
-.outer > button {
+.outer > a {
     color: black;
     border:0;
-    background-color: transparent;
+    background: transparent;
     text-align: center;
+    font-weight: normal;
     min-width: 20%;
-    object-fit: fill;
+    padding-top:1em;
+    padding-bottom: 1em;
 }
 
-.outer > button:hover {
-    background-color:rgb(240, 240, 240);
+.outer > a:hover {
+    background:rgb(240, 240, 240);
 }
 
-.outer > button:active {
-    background-color: rgb(211, 211, 211);
+.outer > a:active {
+    background: rgb(211, 211, 211);
 }
 
 .scrollview {
@@ -93,18 +95,4 @@ a {
     text-decoration: none;
     font-weight: bold;
     color:rgb(80, 158, 206);
-}
-
-.custom-ul {
-    list-style: none;
-    list-style-position: outside;
-}
-
-.custom-ul li:before {
-    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-    color: red; /* Change the color */
-    font-weight: bold; /* If you want it to be bold */
-    display: inline-block; /* Needed to add space between the bullet and the text */
-    width: 1em; /* Also needed for space (tweak if needed) */
-    margin-left: -1.5em; /* Also needed for space (tweak if needed) */
 }

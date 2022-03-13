@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css"\>
+        <link rel="stylesheet" href="styles_calculator.css"\>
+        <title>My Calculator</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="includeHTML.js"></script>
+        
+    </head>
+
+    <body>
+        <header>
+            <div class="outer" data-include="header-include.html"></div>
+        </header>
+
+        <div class="calculator">
+            <div>
+                <p style="color:gray;" id="last">--PREV--</p>
+                <p style="color:gray;" id="operation">--OPERATION--</p>
+                <p id="output">--OUTPUT--</p>
+            </div>
+            <table>
+                <tr>
+                    <td>
+                        <button onclick="clearAll()">CE</button>
+                    </td>
+                    <td>
+                        <button onclick="minus()">C</button>
+                    </td>
+                    <td>
+                        <button onclick="setMode('modulus')">%</button>
+                    </td>
+                    <td>
+                        <button onclick="setMode('plus')">+</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button onclick="addNumber(7)">7</button>
+                    </td>
+                    <td>
+                        <button onclick="addNumber(8)">8</button>
+                    </td>
+                    <td>
+                        <button onclick="addNumber(9)">9</button>
+                    </td>
+                    <td>
+                        <button onclick="setMode('minus')">-</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button onclick="addNumber(4)">4</button>
+                    </td>
+                    <td>
+                        <button onclick="addNumber(5)">5</button>
+                    </td>
+                    <td>
+                        <button onclick="addNumber(6)">6</button>
+                    </td>
+                    <td>
+                        <button onclick="setMode('multiply')">*</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button onclick="addNumber(1)">1</button>
+                    </td>
+                    <td>
+                        <button onclick="addNumber(2)">2</button>
+                    </td>
+                    <td>
+                        <button onclick="addNumber(3)">3</button>
+                    </td>
+                    <td>
+                        <button onclick="setMode('divide')">/</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button onclick="addNumber(0)">0</button>
+                    </td>
+                    <td>
+                        <button onclick="addNumber('.')">.</button>
+                    </td>
+                    <td>
+                        <button onclick="setNumber(3.141)">&pi;</button>
+                    </td>
+                    <td>
+                        <button id="btn_Result" onclick="result()">=</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <script src="calculator.js"></script>
+    </body>
+</html>
