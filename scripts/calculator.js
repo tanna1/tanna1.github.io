@@ -21,7 +21,7 @@ function addNumber(number) {
         return;
     }
 
-    if (n == 0){
+    if (n == 0 && number != "."){
         n = "";
     }
     n+=number.toString();
