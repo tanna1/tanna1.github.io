@@ -50,7 +50,7 @@ $(document).ready(function(){
     }
 
     function setTime(){
-        if (speedin.value != "" && speedin.value > 0){
+        if (speedin.value != "" && physicalLength > 0 && speedin.value > 0){
             var timeh = physicalLength/speedin.value;
             timeout.innerHTML = "Time: " + Math.floor(timeh) + "h " + Math.round((timeh % 1)*60) + "m";
         }
