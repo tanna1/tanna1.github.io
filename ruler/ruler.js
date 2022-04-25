@@ -32,7 +32,12 @@ $(document).ready(function(){
         var physicalLength = pixelLength / imageDpi;
 
         ctx.fillStyle = "#FFFFFF";
-        ctx.fillText((Math.round(physicalLength) + " km"), stopX, stopY+25);
-        ctx.fillText((Math.round(physicalLength/1.609) + " miles"), stopX, stopY+40);
+
+        var xPos = Math.min(stopX, 930);
+        var yPos = Math.min(stopY, 700);
+
+
+        ctx.fillText((Math.round(physicalLength) + " km"), xPos, yPos+25);
+        ctx.fillText((Math.round(physicalLength/1.609) + " miles"), xPos, yPos+40);
     }
 });
