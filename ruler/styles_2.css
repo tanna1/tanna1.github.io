@@ -2,6 +2,7 @@ canvas{
     background-image: url("/media/edonia_map.jpg");
     background-position: center;
     background-size: 100% 100%;
+    margin:0;
 }
 
 body{
