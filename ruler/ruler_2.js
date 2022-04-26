@@ -20,7 +20,7 @@ $(document).ready(function(){
     isMobile = true;
 }
 
-    if(isMobile)//window.matchMedia("(max-width: 767px)").matches){
+    if(isMobile){//window.matchMedia("(max-width: 767px)").matches){
         // This is a mobile device.
         $("canvas").click(function(event){
             console.log("click");
