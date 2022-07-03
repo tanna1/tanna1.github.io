@@ -1,2 +1,2 @@
-# [thanna0.github.io](https://thanna0.github.io)
+# [tanna1.github.io](https://tanna1.github.io)
 A personal project to learn the basics of web development
